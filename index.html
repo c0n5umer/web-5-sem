@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/icon.svg" type="image/svg">
+  <meta name="keywords" content="todo, tasks, manager, list, todo list">
+  <meta name="description" content="todo list">
+  <meta name="author" content="c0nsumer">
+  <title>Todo</title>
+
+  <script src="dist/main.js" defer></script>
+  <script src="dist/link.js" defer></script>
+  <script src="dist/load.js" defer></script>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="link" href="./index.html">Home</a>
+      <a class="link" href="./async.html">Async</a>
+    </nav>
+  </header>
+  <main>
+
+
+    <div class="hero">
+      <h1 class="title">TODO List</h1>
+      <h2 class="description">A simple and effective tool for organizing and prioritizing tasks</h2>
+      <cite class="quote">
+        <sup class="quote-content">
+          "С списком задач в руках я стремлюсь к достижению своих целей, не позволяя проблемам нарушить мою концентрацию
+          и
+          уверенность в себе."
+
+        </sup>
+        <sub class="quote-source">Кто-то, 2023</sub>
+      </cite>
+
+    </div>
+
+    <div class="content">
+
+      <section class="add">
+        <h3>Add Todo</h3>
+        <form id="add" onsubmit="event.preventDefault()" class="form">
+          <div class="input-group">
+            <label for="add-title">Title</label>
+            <input autocomplete="off" type="text" class="add-title" id="add-title">
+          </div>
+          <button class="add-button">Create</button>
+        </form>
+      </section>
+
+      <section>
+        <h3>Todo List</h3>
+        <ul class="list" id="list" />
+      </section>
+    </div>
+
+
+  </main>
+  <footer>
+    <div id="load">
+      Page load in
+      <span id="load-time"></span>
+      ms
+    </div>
+
+    <img src="./assets/kot.jpg" class="kot" />
+
+  </footer>
+</body>
+
+</html>
